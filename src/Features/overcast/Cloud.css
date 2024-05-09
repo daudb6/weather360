@@ -1,0 +1,77 @@
+.cloud-section {
+  padding: 3rem 7rem;
+  background-color: #5d4986;
+  height: 100vh;
+}
+
+.cloud {
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 30px;
+}
+
+.cloud-heading span {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.cloud-dat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cloud-dat img {
+  height: 90px;
+}
+
+.cloud-dat span {
+  font-size: 6rem;
+}
+
+.cloud-heading h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.clouds-info {
+  width: 40%;
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
+  margin-top: 4rem;
+  border: 1px solid #ffffff;
+  background-color: #704a7b;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.h-info h2 {
+  font-size: 2.3rem;
+  color: #ffffff;
+}
+
+.humidity span {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.c-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}

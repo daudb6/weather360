@@ -1,0 +1,9 @@
+.report-img img {
+  height: 10rem;
+}
+
+@media (max-width: 1090px) {
+  .report-img img {
+    height: 6rem;
+  }
+}

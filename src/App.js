@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { Routes,Route, RouterProvider } from 'react-router-dom';
 import './App.css';
+import { Navbar } from './Features/Navbar/Navbar';
+import { Report } from './Features/Report/Report';
+import { Cloud } from './Features/overcast/Cloud';
+import store from './store';
+import { Provider } from 'react-redux';
+import { Daud } from './test';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store = {store}>
+   <Navbar />
+   
+   <Routes>
+
+   <Route path='/' element= {<Report/>}/>
+   <Route path='Cloud' element= {<Cloud />}/>
+   <Daud />
+   </Routes>
+   </Provider>
   );
 }
 
