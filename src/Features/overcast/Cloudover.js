@@ -1,6 +1,4 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-
 export const Cloudover = ({image,name,value}) => {
   
   return (
@@ -8,7 +6,7 @@ export const Cloudover = ({image,name,value}) => {
     <div className='clouds-info'>
           <div className='humidity'>
             <div className='h-info'>
-              <img src={image}></img>
+              <img src={image} alt={name}></img>
               <h2>{name}</h2>
             </div>
             <span>{value}%</span>

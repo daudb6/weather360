@@ -19,11 +19,10 @@ import rain from '../../assets/rain.png'
 
 
 export const Report = () => {
-  let imagePath;
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(fetchWeather())
-  },[])
+  },[dispatch])
   
   const wData = useSelector((state) => state.weatherReducer.report)
 

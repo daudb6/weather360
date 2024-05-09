@@ -1,5 +1,4 @@
 import React from 'react'
-import setting from "../images/setting.png"
 import "./Cloud.css"
 import { Cloudover } from './Cloudover'
 import { useSelector } from 'react-redux'
@@ -16,7 +15,7 @@ export const Cloud = () => {
           <span>{dat.name},{dat.sys.country}</span>
           <div className='cloud-dat'>
              <span>{dat.main.temp}</span>
-             <img src="https://shimmering-heliotrope-f0efd9.netlify.app/static/media/clear.063145c60a96e8911a84.png"></img>
+             <img src="https://shimmering-heliotrope-f0efd9.netlify.app/static/media/clear.063145c60a96e8911a84.png" alt={dat.name}></img>
           </div>
           <h3>broken clouds</h3>
         </div>
